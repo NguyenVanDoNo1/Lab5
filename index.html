@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My learning</h1>
+            <p>87hr 36min watched <a href="#">View all activity</a></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="tab-link active" data-tab="all-courses">All courses</a></li>
+            <li><a href="#" class="tab-link" data-tab="learning-paths">Learning paths</a></li>
+            <li><a href="#" class="tab-link" data-tab="certifications">Certifications</a></li>
+            <li><a href="#" class="tab-link" data-tab="archived">Archived</a></li>
+            <li><a href="#" class="tab-link" data-tab="learning-tools">Learning tools</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sort, Filter, Reset and Search Bar -->
+    <div class="controls-container">
+        <div class="sort-filter-reset">
+            <!-- Sort By -->
+            <div class="sort-by">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="recent">Recently Accessed</option>
+                </select>
+                <select id="sort">
+                    <option value="progress">Progress</option>
+                </select>
+            </div>
+        
+            <!-- Filter By -->
+            <div class="filter-by">
+                <label for="filter">Filter by:</label>
+                <select id="filter">
+                    <option value="category">Categories</option>
+                </select>
+                <select id="filter">
+                    <option value="instructor">Instructor</option>
+                </select>
+            </div>
+        
+            <!-- Reset Button -->
+            <div class="reset-btn">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <label for="search-courses">Search my courses:</label>
+            <input type="text" id="search-courses" placeholder="Search...">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <section id="all-courses" class="tab-content active">
+        <h2>All Courses</h2>
+        <div class="course-list">
+            <!-- Danh sách khóa học -->
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h1.jpg" alt="FPT_ISMS Refresh Training">
+                </div>
+                <div class="course-info">
+                    <h2>FPT_ISMS Refresh Training S2 2024 (Vietnamese)</h2>
+                    <p>100% complete</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h2.jpg" alt="Spring Boot Development Bootcamp">
+                </div>
+                <div class="course-info">
+                    <h2>The Complete Spring Boot Development Bootcamp</h2>
+                    <p>0% complete</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h3.jpg" alt="Build a Backend REST API with Python & Django">
+                </div>
+                <div class="course-info">
+                    <h2>Build a Backend REST API with Python & Django - Advanced</h2>
+                    <p>100% complete</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h4.jpg" alt="FPT_PMP Training ">
+                </div>
+                <div class="course-info">
+                    <h2>FPT_PMP Training</h2>
+                    <p>35% complete</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h5.jpg" alt="ChatGPT Python Programming: AI Giuded ">
+                </div>
+                <div class="course-info">
+                    <h2>ChatGPT Python Programming: AI Giuded</h2>
+                    <p>78% complete</p>
+                    <div class="rating">★★★☆☆</div>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h5.jpg" alt="ChatGPT Python Programming: AI Giuded ">
+                </div>
+                <div class="course-info">
+                    <h2>ChatGPT Python Programming: AI Giuded</h2>
+                    <p>78% complete</p>
+                    <div class="rating">★★★☆☆</div>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h6.jpg" alt="Java Certification (1Z0-819) Topic-wise Part-1 ">
+                </div>
+                <div class="course-info">
+                    <h2>Java Certification (1Z0-819) Topic-wise Part-1</h2>
+                    <p>1% complete</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-image">
+                    <img src="./img/h7.jpg" alt="English Vocabulary: 504 Essential Words though 7 stages  ">
+                </div>
+                <div class="course-info">
+                    <h2>English Vocabulary: 504 Essential Words though </h2>
+                    <p>0% complete</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="learning-paths" class="tab-content active">
+        <h2>Learning Paths</h2>
+        <!-- Nội dung Learning Paths -->
+        <div class="learning-paths-container">
+            <div class="learning-path-item">
+                <div class="learning-path-info">
+                    <h2>Induction Training_GAAFOFY (VI)</h2>
+                    <p>1 of 6 items complete</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 16%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="learning-path-item">
+                <div class="learning-path-info">
+                    <h2>Induction Training for BO_IT_Mandatory (VI)</h2>
+                    <p>9 of 9 items complete</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="certifications" class="tab-content">
+        <h2>Certifications</h2>
+        <!-- Nội dung Certifications -->
+        <p>Here are your certifications...</p>
+    </section>
+
+    <section id="archived" class="tab-content">
+        <h2>Archived Courses</h2>
+        <!-- Nội dung Archived -->
+        <p>Here are your archived courses...</p>
+    </section>
+
+    <section id="learning-tools" class="tab-content">
+        <h2>Learning Tools</h2>
+        <!-- Nội dung Learning Tools -->
+        <p>Here are your learning tools...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Learning Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
